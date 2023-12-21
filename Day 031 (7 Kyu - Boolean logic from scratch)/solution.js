@@ -1,7 +1,7 @@
 const or = (a, b) => {
-    return !!a + !!b > 0;
+    return Boolean(a) + Boolean(b) > 0;
 };
 
 const xor = (a, b) => {
-    return !!a * !!b === 0;
+    return Boolean(a) !== Boolean(b);
 };
